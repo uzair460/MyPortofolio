@@ -1,0 +1,98 @@
+/* Skills Section Styles */
+.skills-section {
+    padding: 100px 0 50px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.skill-category {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(8, 228, 252, 0.2);
+}
+
+.skill-category h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category h3 i {
+    font-size: 1.2rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(8, 228, 252, 0.1);
+    border: 1px solid rgba(8, 228, 252, 0.3);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.skill-tag:hover {
+    background: rgba(8, 228, 252, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(8, 228, 252, 0.15);
+}
+
+.skill-tag i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.skill-tag.expert {
+    background: rgba(8, 228, 252, 0.15);
+    border-color: rgba(8, 228, 252, 0.4);
+}
+
+.skill-tag.advanced {
+    background: rgba(8, 228, 252, 0.1);
+    border-color: rgba(8, 228, 252, 0.3);
+}
+
+.skill-tag.intermediate {
+    background: rgba(8, 228, 252, 0.08);
+    border-color: rgba(8, 228, 252, 0.2);
+}
+
+.skill-tag.beginner {
+    background: rgba(8, 228, 252, 0.05);
+    border-color: rgba(8, 228, 252, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-list {
+        justify-content: center;
+    }
+}
